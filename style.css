@@ -1,0 +1,573 @@
+* {
+    font-family: 'Montserrat';
+}
+
+body {
+    margin: 0;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 350px;
+    height: 86.40vh;
+    border-radius: 7px;
+    margin-left: 0.5rem;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 7px;
+    line-height: 2rem;
+    padding: 1rem;
+    font-size: 15px;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.spotify i {
+    font-size: 25px;
+}
+
+.spotify a {
+    font-size: 16px;
+}
+
+.hs {
+    color: white;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.sidebar-options {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.sidebar-options i {
+    font-size: 22px;
+}
+
+.sidebar-options:hover {
+    opacity: 1;
+}
+
+.library {
+    background-color: #121212;
+    padding: 0.5rem;
+    border-radius: 7px;
+    margin-top: 0.3rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: rgb(123, 123, 123) #121212;
+
+    height: 8rem;
+}
+
+.library-icontext {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.library-icontext:hover {
+    opacity: 1;
+}
+
+.options {
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 320px;
+    margin-top: -8px;
+}
+
+.li {
+    font-size: 22px;
+    padding: 0.5rem;
+}
+
+.plus {
+    opacity: 0.5;
+}
+
+.plus:hover {
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.library-box {
+    background-color: #232323;
+    width: 19rem;
+    height: 7rem;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border-radius: 7px;
+    line-height: 0.3rem;
+    overflow: hidden;
+}
+
+.box-under {
+    margin-top: 0.5rem;
+}
+
+.b {
+    background-color: white;
+    border: none;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border-radius: 0.9rem;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.sidebar-navigation {
+    margin-top: 0.3rem;
+    background-color: #232323;
+    border-radius: 7px;
+    height: 9.2rem;
+    padding: 1rem;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation div {
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+
+
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    flex: wrap;
+    font-size: 0.7rem;
+    color: #B3B3B3;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.english {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 7rem;
+    border: 1px solid gainsboro;
+    background-color: none;
+    width: 5rem;
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 12px;
+}
+
+.english:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.english i {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.english p {
+    padding-right: 0.5rem;
+}
+
+
+
+
+
+/*main content*/
+
+.main-content {
+    background-color: #121212;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+    width: 100vw;
+    height: 85vh;
+    margin-left: 0.5rem;
+    margin-right: 0.6rem;
+    scrollbar-color: rgb(123, 123, 123) #121212;
+}
+
+.sticky-nav {
+    background-color: #121212;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 71.3vw;
+}
+
+.sticky-nav-icons {
+    margin-left: 1rem;
+    font-size: 35px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-nav-icons div {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    background-color: #232323;
+    border-radius: 50%;
+}
+
+.right {
+    background-color: #232323;
+    border-radius: 50%;
+}
+
+.bi-arrow-left-circle {
+    color: gainsboro;
+    justify-content: center;
+}
+
+.bi-arrow-right-circle {
+    color: gainsboro;
+}
+
+.sticky-nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.snb {
+    color: black;
+    font-weight: bold;
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    margin-right: 1rem;
+    background-color: white;
+    border-radius: 7rem;
+}
+
+.signup {
+    opacity: 0.5;
+}
+
+.signup:hover {
+    opacity: 1;
+}
+
+
+
+
+/*popular Artist*/
+
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 26rem;
+    font-weight: bold;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+}
+.pa
+{
+    font-size: 1.3rem;
+}
+.pa:hover{
+    text-decoration: underline;
+}
+.show {
+
+    font-size: 0.7rem;
+    color: #B3B3B3;
+   
+}
+.show:hover{
+    text-decoration: underline;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    height: fit-content;
+    margin-top: -25.7rem;
+    margin-bottom: 0.3rem;
+}
+
+
+.cardss {
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    height: fit-content;
+    margin-top: -25.7rem;
+    margin-bottom: 0.3rem;
+}
+
+.popular-artist-cards {
+    display: flex;
+    margin-top: -25.7rem;
+    margin-bottom: 0.3rem;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.popular-albums-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ 
+}
+.circle-image{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+img{
+    width: 9.5rem;
+    height: 9.5rem;  
+    border-radius: 7px;
+}
+.second
+{
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 7px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.name {
+    font-weight: bold;
+    margin-bottom: 0;
+    color:White;
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+
+
+}
+
+.artist {
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    margin-top: 0;
+    margin-left: -0.5rem;
+    color:#B3B3B3;
+    padding: 0.5rem;
+}
+
+.box-hover {
+
+    width: 10rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.a {
+    width: 9.8rem;
+    height: 14rem;
+    border-radius: 8px;
+  
+}
+
+.a:hover {
+    background-color: #232323;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom-links {}
+
+.bottom-links-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #121212;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.bottom-links-inner div {
+    height: fit-content;
+
+}
+
+.bh {
+    flex-direction: column;
+    color: gainsboro;
+}
+
+.forhover {
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.forhover:hover {
+    color: white;
+    text-decoration: underline;
+
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 10rem;
+}
+
+
+.icons div {
+    background-color: rgba(220, 220, 220, 0.5);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.icons div:hover {
+    background-color: gainsboro;
+}
+
+.icons i {
+    font-size: 20px;
+}
+
+.horizontal-line {
+    font-size: 0.2rem;
+    padding: 2rem;
+}
+
+.copy-right {
+    display: flex;
+    margin-bottom: 0.5rem;
+    margin-top: -2rem;
+
+    font-size: 0.8rem;
+    line-height: normal;
+    color: gainsboro;
+    padding: 2rem;
+
+}
+
+.footer {
+    background-image: linear-gradient(to right, rgb(184, 13, 176), rgb(193, 27, 219), rgb(108, 213, 255));
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    height: 72px;
+    margin-bottom: 0.1rem;
+    padding: 0.2rem;
+    width: 100vw;
+}
+
+.fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 7rem;
+    width: 9rem;
+    height: fit-content;
+    margin-right: 1rem;
+}
+
+.fb:hover {
+    transform: scale(1.1);
+}
